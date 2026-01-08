@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="task-container">
+    {% for task in tasks %}
+    <div class="task-card">
+        <h3>{{ task.title }}</h3>
+
+        <p><strong>Status:</strong> {{ task.status }}</p>
+        <p><strong>Priority:</strong> {{ task.priority }}</p>
+        <p><strong>Deadline:</strong> {{ task.deadline }}</p>
+
+        <div class="btn-group spaced">
+            <a class="btn btn-view" href="/task/{{ task.id }}">View</a>
+            <a class="btn btn-edit" href="/edit/{{ task.id }}">Edit</a>
+            <a class="btn btn-delete" href="/delete/{{ task.id }}">Delete</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

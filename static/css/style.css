@@ -1,0 +1,212 @@
+/* ---------- Global Reset ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ---------- Page Background ---------- */
+body {
+    background: linear-gradient(135deg, #fff3e6, #ffe0cc);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------- Header ---------- */
+header {
+    background: linear-gradient(90deg, #ff9a3c, #ff7a18);
+    color: white;
+    padding: 16px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background: #ff9a3c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+/* ---------- Main Content ---------- */
+main {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* ---------- Task Grid ---------- */
+.task-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* ---------- Task Card ---------- */
+.task-card {
+    background: #ffffff;
+    width: 300px;
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* ---------- Task Title ---------- */
+.task-card h3 {
+    color: #ff7a18;
+    margin-bottom: 10px;
+}
+
+/* ---------- Task Info ---------- */
+.task-card p {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    color: #555;
+}
+
+/* ---------- Buttons ---------- */
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    transition: 0.3s ease;
+}
+
+/* View */
+.btn-view {
+    background: #ffe5cc;
+    color: #ff7a18;
+}
+.btn-view:hover {
+    background: #ffd1a3;
+}
+
+/* Edit */
+.btn-edit {
+    background: #fff0b3;
+    color: #cc8400;
+}
+.btn-edit:hover {
+    background: #ffe680;
+}
+
+/* Delete */
+.btn-delete {
+    background: #ffd6d6;
+    color: #cc0000;
+}
+.btn-delete:hover {
+    background: #ffb3b3;
+}
+
+/* ---------- Form ---------- */
+.form-card {
+    background: white;
+    max-width: 400px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.form-card input,
+.form-card select,
+.form-card button {
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.form-card button {
+    background: linear-gradient(90deg, #ff9a3c, #ff7a18);
+    color: white;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.form-card button:hover {
+    opacity: 0.9;
+}
+
+/* ---------- Task Detail Card ---------- */
+.detail-card {
+    background: #fff7ed;
+    max-width: 450px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+.detail-card h2 {
+    color: #ff7a18;
+    margin-bottom: 15px;
+}
+
+/* ---------- Mobile Responsive ---------- */
+@media (max-width: 600px) {
+    .task-card {
+        width: 100%;
+    }
+}
+.spaced {
+    gap: 10px;
+}
+.about-card {
+    background: #fff4e6;
+    max-width: 750px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.1);
+}
+
+.about-card h2 {
+    color: #ff7a18;
+    margin-bottom: 15px;
+}
+
+.about-card p {
+    margin-bottom: 12px;
+    line-height: 1.7;
+    color: #444;
+}
+
+.about-card ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.about-card li {
+    margin-bottom: 8px;
+}
+.form-card h2 {
+    text-align: center;
+    color: #ff7a18;
+    margin-bottom: 15px;
+}
